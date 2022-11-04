@@ -21,6 +21,11 @@ You can modify `board` token to march your test equipment.
 
 Compile and upload test project to ESP32 and/or ESP8266 board.
 
+Install additional Python modules:
+```shell
+pip install -r requirements.txt
+```
+
 ## ESP32
 ```shell
 esphome run esphome-test-snmp-esp32.yaml
