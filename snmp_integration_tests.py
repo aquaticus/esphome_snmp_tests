@@ -1,4 +1,5 @@
 import re
+import time
 
 import pytest
 
@@ -58,6 +59,18 @@ class TestSystem:
     def test_location(self, host):
         val = get_value("1.3.6.1.2.1.1.6.0", host)
         assert val == 'Cyberspace'
+
+    def test_system_uptime(self, host):
+        val1 = get_value("1.3.6.1.2.1.25.1.1.0", host)
+        time.sleep(0.1)
+        val2 = get_value("1.3.6.1.2.1.25.1.1.0", host)
+        assert val2 > val1
+
+    def test_network_uptime(self, host):
+        val1 = get_value("1.3.6.1.2.1.1.3.0", host)
+        time.sleep(0.1)
+        val2 = get_value("1.3.6.1.2.1.1.3.0", host)
+        assert val2 > val1
 
 
 class TestStorageFlash:
