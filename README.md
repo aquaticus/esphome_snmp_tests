@@ -52,7 +52,7 @@ Tests accepts 3 (optional) arguments:
 Runs integrity tests.
 
 ```shell
-pytest --chip esp32 --host esphome-test-snmp-esp32.locale  snmp_integration_tests.py
+pytest --chip esp32 --host esphome-test-snmp-esp32.local  snmp_integration_tests.py
 ```
 
 # ESP8266
@@ -60,7 +60,7 @@ pytest --chip esp32 --host esphome-test-snmp-esp32.locale  snmp_integration_test
 Runs integrity tests.
 
 ```shell
-pytest --chip esp32 --host esphome-test-snmp-esp8266.locale  snmp_integration_tests.py
+pytest --chip esp32 --host esphome-test-snmp-esp8266.local  snmp_integration_tests.py
 ```
 
 For more detailed description how to run tests look at [pytest documentation](https://docs.pytest.org/en/7.2.x/contents.html).
