@@ -44,7 +44,7 @@ esphome run esphome-test-snmp-esp8266.yaml
 
 Tests accepts 3 (optional) arguments:
 * `--chip` - chip type: `esp32` or `esp8266`; default `esp32`
-* `--host` - host name or IP address of the board; default `esphome-test-snmp-esp32.locale`
+* `--host` - host name or IP address of the board; default `esphome-test-snmp-esp32.local`
 * `--duration` - time in seconds for stability test; default 60s
 
 # ESP32
