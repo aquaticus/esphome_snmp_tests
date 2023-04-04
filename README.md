@@ -3,6 +3,10 @@
 The project provides integration tests for SNMP component.
 It uses `pytest` Python test framework.
 
+SNMP Component source code: https://github.com/aquaticus/esphome/tree/aquaticus-snmp
+
+SNMP Component documentation: https://aquaticus.info/snmp.html
+
 # Preparation
 
 First create a new file and call it `secret.yaml`.
