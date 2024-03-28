@@ -35,3 +35,10 @@ ota:
 snmp:
   location: Cyberspace
   contact: John Doe
+
+external_components:
+  # SNMP component
+  # - source: github://aquaticus/esphome-snmp
+  - source:
+      type: local
+      path: ../esphome-snmp/components

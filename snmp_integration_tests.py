@@ -2,6 +2,7 @@ import re
 import time
 
 import pytest
+import socket
 
 from common import *
 
@@ -217,4 +218,6 @@ class TestWifi:
 
     def test_ip(self, host):
         val = get_value(CUSTOM_OID + "4.4.0", host)
+        ip = socket.gethostbyname(host)
         assert re.fullmatch(r'^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$', val) is not None
+        assert ip == val
